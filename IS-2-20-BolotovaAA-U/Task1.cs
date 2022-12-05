@@ -16,5 +16,17 @@ namespace IS_2_20_BolotovaAA_U
         {
             InitializeComponent();
         }
+
+        private void Task1_Load(object sender, EventArgs e)
+        {
+            Accessories accessories = new Accessories();
+            accessories.price = 566;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
