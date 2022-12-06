@@ -1,4 +1,13 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IS_2_20_BolotovaAA_U
@@ -9,10 +18,26 @@ namespace IS_2_20_BolotovaAA_U
         {
             InitializeComponent();
         }
-
-        private void InitializeComponent()
+        public static string ConnStr = "server=chuc.caseum.ru;port=33333;user=st_2_20_4;database=is_2_20_st4_KURS;password=65655604;";
+        MySqlConnection co = new MySqlConnection(ConnStr);
+        private void Task3_Load(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            co.Open();
+            connection.Met(dataGridView1, co);
+
+
+            co.Close();
+        }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show(connection.Data(ConnStr));
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
