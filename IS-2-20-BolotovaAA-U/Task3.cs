@@ -14,6 +14,7 @@ namespace IS_2_20_BolotovaAA_U
 {
     public partial class Task3 : Form
     {
+        connection connec = new connection();
         public Task3()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace IS_2_20_BolotovaAA_U
         private void Task3_Load(object sender, EventArgs e)
         {
             co.Open();
-            connection.Met(dataGridView1, co);
+            connec.Met(dataGridView1, co);
 
 
             co.Close();
@@ -32,7 +33,7 @@ namespace IS_2_20_BolotovaAA_U
         private void button1_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show(connection.Data(ConnStr));
+            MessageBox.Show(connec.Data(ConnStr));
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -46,7 +46,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 44);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Строка подключения";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -85,22 +85,22 @@
             // 
             // mail
             // 
-            this.mail.HeaderText = "email";
+            this.mail.HeaderText = "ID";
             this.mail.Name = "mail";
             // 
             // post
             // 
-            this.post.HeaderText = "post";
+            this.post.HeaderText = "FIO";
             this.post.Name = "post";
             // 
             // login
             // 
-            this.login.HeaderText = "login";
+            this.login.HeaderText = "PHONE";
             this.login.Name = "login";
             // 
             // password
             // 
-            this.password.HeaderText = "password";
+            this.password.HeaderText = "EMAIL";
             this.password.Name = "password";
             // 
             // Task3

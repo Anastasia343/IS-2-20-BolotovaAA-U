@@ -30,7 +30,7 @@ namespace IS_2_20_BolotovaAA_U
         }
         public void Met(DataGridView grid, MySqlConnection co)
         {
-            string bol = ;
+            string bol = "SELECT * FROM Store left join S_Staff on Store.id = S_Staff.id";
             MySqlCommand a = new MySqlCommand(bol, co);
             MySqlDataReader read = a.ExecuteReader();
             List<string[]> data = new List<string[]>();
@@ -44,7 +44,7 @@ namespace IS_2_20_BolotovaAA_U
                 data[data.Count - 1][4] = read[4].ToString();
                 data[data.Count - 1][5] = read[5].ToString();
                 data[data.Count - 1][6] = read[6].ToString();
-                data[data.Count - 1][7] = read[7].ToString();
+                //data[data.Count - 1][7] = read[7].ToString();
             }
             foreach (string[] vi in data)
                 grid.Rows.Add(vi);

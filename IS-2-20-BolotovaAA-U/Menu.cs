@@ -29,7 +29,6 @@ namespace IS_2_20_BolotovaAA_U
         {
             Task2 task2 = new Task2();
             task2.ShowDialog();
-            
         }
 
         private void button3_Click(object sender, EventArgs e)
